@@ -1,0 +1,45 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:title="@string/action_about"
+        android:icon="@drawable/icon"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="@string/action_logout"
+        android:icon="@drawable/icon"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_updateStudentCredentials"
+        android:orderInCategory="100"
+        android:title="Update Credentials"
+        android:icon="@drawable/icon"
+        app:showAsAction="never"
+        />
+
+  <!--  <item
+        android:id="@+id/action_administrator"
+        android:orderInCategory="100"
+        android:title="@string/action_administrator"
+        android:icon="@drawable/icon"
+        app:showAsAction="never"
+        />-->
+
+
+
+    <item
+        android:id="@+id/action_exit"
+        android:orderInCategory="100"
+        android:title="@string/action_exit"
+        android:icon="@drawable/icon"
+        app:showAsAction="never"
+        />
+
+</menu>

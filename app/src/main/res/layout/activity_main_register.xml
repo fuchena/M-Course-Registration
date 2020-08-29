@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_blue_dark">
+
+    <TextView
+        android:text="Student Registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <EditText
+        android:id="@+id/editTextMatNo"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#fbfefd"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Your MatNo"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextFullName"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editTextMatNo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#fbfefd"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Your Full Name"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#fbfefd"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editTextEmail"
+        android:hint="Enter Your Email"
+        android:gravity="center"
+        android:layout_below="@+id/editTextFullName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+
+    <EditText
+        android:id="@+id/editTextMajor"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_marginTop="16dp"
+        android:background="#fbfefd"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Your Major"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#fbfefd"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editTextPassword"
+        android:hint="Enter Your Password"
+        android:gravity="center"
+        android:layout_below="@+id/editTextMajor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <EditText
+        android:id="@+id/Retypepassword"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_marginTop="16dp"
+        android:background="#fff"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Retype Password"
+        android:inputType="textPassword"
+        android:textColor="#000"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Retypepassword"
+        android:layout_marginTop="11dp"
+        android:drawableLeft="@drawable/signup"
+        android:text="Register" />
+
+    <Button
+        android:text="Already Register | Log In"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Login"
+        android:layout_below="@+id/Submit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

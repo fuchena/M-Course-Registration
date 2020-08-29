@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_blue_dark">
+
+            <ListView
+                android:id="@+id/listViewCourses"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/register"
+                android:layout_marginTop="24dp"
+                android:elevation="1dp" />
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/lecturerName"
+                android:layout_marginTop="18dp"
+                android:drawableLeft="@drawable/register"
+                android:onClick="registerCourse"
+                android:text="Register" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/spinnerCourse"
+                android:layout_marginTop="17dp"
+                android:gravity="center_horizontal"
+                android:text="Credit Hours:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewLecturer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="17dp"
+                android:gravity="center_horizontal"
+                android:text="Lecturer:"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/creditHours"
+                style="@style/TextColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView"
+                android:layout_alignBottom="@+id/textView"
+                android:layout_marginLeft="52dp"
+                android:layout_marginStart="52dp"
+                android:layout_toEndOf="@+id/textView"
+                android:layout_toRightOf="@+id/textView"
+                android:elevation="2dp"
+                android:gravity="left"
+                android:text="Credit Hours"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                android:typeface="monospace" />
+
+            <TextView
+                android:id="@+id/lecturerName"
+                style="@style/TextColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textViewLecturer"
+                android:layout_alignBottom="@+id/textViewLecturer"
+                android:layout_alignLeft="@+id/creditHours"
+                android:layout_alignStart="@+id/creditHours"
+                android:elevation="2dp"
+                android:gravity="left"
+                android:text="Lecturer"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                android:typeface="monospace" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:drawableLeft="@drawable/if_sync"
+                android:onClick="syncing"
+                android:text="Send Data" />
+
+            <Spinner
+                android:id="@+id/spinnerSchool"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/button"
+                android:layout_marginTop="12dp"
+                android:spinnerMode="dialog" />
+
+
+            <Spinner
+                android:id="@+id/spinnerProgram"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/spinnerSchool"
+                android:layout_marginTop="12dp"
+                android:spinnerMode="dialog" />
+
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/spinnerCourse"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/spinnerProgram"
+                android:spinnerMode="dialog" />
+        </RelativeLayout>
+</RelativeLayout>
+    </ScrollView>

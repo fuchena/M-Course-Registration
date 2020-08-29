@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_blue_dark">
+
+
+    <TextView
+        android:id="@+id/welcomeStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Welcome "
+        android:gravity="right"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:layout_marginRight="5dp"/>
+
+
+
+    <EditText
+        android:id="@+id/validateInput"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Valid Payment Token"
+        android:inputType="textPersonName"
+        android:textColor="#000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/validateInput"
+        android:layout_marginTop="47dp"
+        android:drawableLeft="@drawable/accept_user"
+        android:text="Validate" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
